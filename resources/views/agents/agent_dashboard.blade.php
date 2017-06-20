@@ -1,0 +1,129 @@
+@include('layouts.admin_header')
+    <section>
+      <section class="hbox stretch">
+        <!-- .aside -->
+        @include('layouts.dashboards_sidebar')
+        <!-- /.aside -->
+        <div class="content-page">
+          <!-- Start content -->
+          <div class="content">
+              <div class="container">
+
+                  <!-- Page-Title -->
+                  <div class="row">
+                      <div class="col-sm-12">
+                          <h4 class="page-title">Dashboard</h4>
+                          <p class="text-muted page-title-alt">Hello <strong style="color:#505458;">{{Auth::user()->first_name}}</strong>  Welcome to Esavex Admin Panel</p>
+                      </div>
+                  </div>
+
+                  <div class="row">
+                      <div class="col-lg-4 col-sm-6">
+                          <div class="widget-panel widget-style-2 bg-white">
+                              <i class="md md-people text-primary"></i>
+                              <h2 class="m-0 text-dark counter font-600">1</h2>
+                              <div class="text-muted m-t-5">My clients</div>
+                          </div>
+                      </div>
+                      <div class="col-lg-4 col-sm-6">
+                          <div class="widget-panel widget-style-2 bg-white">
+                              <i class="md md-add-shopping-cart text-pink"></i>
+                              <h2 class="m-0 text-dark counter font-600">1256</h2>
+                              <div class="text-muted m-t-5">Orders</div>
+                          </div>
+                      </div>
+                      <div class="col-lg-4 col-sm-6">
+                          <div class="widget-panel widget-style-2 bg-white">
+                              <i class="ti ti-wallet text-custom"></i>
+                              <h2 class="m-0 text-dark counter font-600">0.0 Rwf</h2>
+                              <div class="text-muted m-t-5">My Wallets</div>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- end row -->
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div class="card-box">
+                              <a href="ecommerce-dashboard.html#" class="pull-right btn btn-default btn-sm waves-effect waves-light">View All</a>
+                        <h4 class="text-dark header-title m-t-0">Recent Orders</h4>
+                        <p class="text-muted m-b-30 font-13">
+              Your awesome text goes here.
+            </p>
+
+                        <div class="table-responsive">
+                                  <table class="table table-actions-bar">
+                                      <thead>
+                                          <tr>
+                                              <th>Product</th>
+                                              <th>Order Date</th>
+                                              <th>Order Number</th>
+                                              <th>Amount</th>
+                                          </tr>
+                                      </thead>
+                                      <tbody>
+                                          <tr>
+                                              <td><img src="assets/dashboard_assets/images/products/iphone.jpg" class="thumb-sm" alt=""> </td>
+                                              <td>08/10/2015</td>
+                                              <td><a href="ecommerce-dashboard.html#">UB#160924</a></td>
+                                              <td>$1,256</td>
+                                          </tr>
+
+                                          <tr>
+                                              <td><img src="assets/dashboard_assets/images/products/samsung.jpg" class="thumb-sm" alt=""> </td>
+                                              <td>08/10/2015</td>
+                                              <td><a href="ecommerce-dashboard.html#">UB#160923</a></td>
+                                              <td>$2,562</td>
+                                          </tr>
+
+                                          <tr>
+                                              <td><img src="assets/dashboard_assets/images/products/lumia.jpg" class="thumb-sm" alt=""> </td>
+                                              <td>08/10/2015</td>
+                                              <td><a href="ecommerce-dashboard.html#">UB#160922</a></td>
+                                              <td>$6,458</td>
+                                          </tr>
+
+                                          <tr>
+                                              <td><img src="assets/dashboard_assets/images/products/imac.jpg" class="thumb-sm" alt=""> </td>
+                                              <td>07/10/2015</td>
+                                              <td><a href="ecommerce-dashboard.html#">UB#160921</a></td>
+                                              <td>$1,256</td>
+                                          </tr>
+
+                                          <tr>
+                                              <td><img src="assets/dashboard_assets/images/products/macbook.jpg" class="thumb-sm" alt=""> </td>
+                                              <td>07/10/2015</td>
+                                              <td><a href="ecommerce-dashboard.html#">UB#160920</a></td>
+                                              <td>$7,521</td>
+                                          </tr>
+
+                                          <tr>
+                                              <td><img src="assets/dashboard_assets/images/products/samsung.jpg" class="thumb-sm" alt=""> </td>
+                                              <td>06/10/2015</td>
+                                              <td><a href="ecommerce-dashboard.html#">UB#160920</a></td>
+                                              <td>$7,521</td>
+                                          </tr>
+
+                                      </tbody>
+                                  </table>
+                              </div>
+
+                      </div>
+                    </div> <!-- end col -->
+
+
+
+                  </div>
+                  
+                  
+
+              </div> <!-- container -->
+                         
+          </div> <!-- content -->
+
+      </div>
+@include('layouts.admin_footer')
+  
+  
+
+
+  
